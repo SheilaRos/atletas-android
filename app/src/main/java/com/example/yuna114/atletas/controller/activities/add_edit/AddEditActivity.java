@@ -81,10 +81,10 @@ public class AddEditActivity extends AppCompatActivity implements AthleteCallbac
 
         switch (extras.getString("type")) {
             case "add":
-                addButton.setText("Add Player");
+                addButton.setText("Add Atleta");
                 break;
             case "edit":
-                addButton.setText("Edit Player");
+                addButton.setText("Edit Atleta");
 
                 id = extras.getString("id");
                 nameView.setText(AthleteManager.getInstance().getAthlete(id).getNombre());
@@ -153,7 +153,7 @@ public class AddEditActivity extends AppCompatActivity implements AthleteCallbac
             // Show a progress spinner, and kick off a background task to
             // perform the user Add attempt.
             showProgress(true);
-
+            atleta = new Atleta();
             atleta.setNombre(nombre);
             atleta.setApellido(apellido);
             atleta.setNacionalidad(nacionalidad);
