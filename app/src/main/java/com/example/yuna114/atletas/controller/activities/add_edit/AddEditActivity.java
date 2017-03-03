@@ -21,6 +21,7 @@ import com.example.yuna114.atletas.R;
 import com.example.yuna114.atletas.controller.activities.master_detail.AthleteListActivity;
 import com.example.yuna114.atletas.controller.managers.AthleteManager;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -40,7 +41,7 @@ public class AddEditActivity extends AppCompatActivity implements AthleteCallbac
     private String nombre;
     private String apellido;
     private String nacionalidad;
-    private String birthdate;
+    private Date birthdate;
     private String id;
 
     private View mProgressView;
@@ -139,7 +140,6 @@ public class AddEditActivity extends AppCompatActivity implements AthleteCallbac
         if (this.birthdateView.getMonth() < 10) {
             month = "0" + month;
         }
-        birthdate = year + "-" + month + "-" + day;
 
         boolean cancel = false;
         View focusView = null;

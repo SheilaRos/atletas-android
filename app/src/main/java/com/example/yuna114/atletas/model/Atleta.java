@@ -1,13 +1,16 @@
 package com.example.yuna114.atletas.model;
+
+import java.util.Date;
+
 public class Atleta {
     Long id;
     String nombre;
     String apellido;
     String nacionalidad;
-    String fechaNacimiento;
+    Date fechaNacimiento;
 
     public Atleta() {}
-    public Atleta(long id, String nombre, String apellido, String nacionalidad, String fechaNacimiento) {
+    public Atleta(long id, String nombre, String apellido, String nacionalidad, Date fechaNacimiento) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -22,8 +25,8 @@ public class Atleta {
     public void setApellido(String apellido) {this.apellido = apellido;}
     public String getNacionalidad() {return nacionalidad;}
     public void setNacionalidad(String nacionalidad) {this.nacionalidad = nacionalidad;}
-    public String getFechaNacimiento() {return fechaNacimiento;}
-    public void setFechaNacimiento(String fechaNacimiento) {this.fechaNacimiento = fechaNacimiento;}
+    public Date getFechaNacimiento() {return fechaNacimiento;}
+    public void setFechaNacimiento(Date fechaNacimiento) {this.fechaNacimiento = fechaNacimiento;}
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
