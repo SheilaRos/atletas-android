@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.yuna114.atletas.controller.activities.master_detail.AthletDetailActivity"
+    tools:context="com.example.yuna114.atletas.controller.activities.master_detail.AthleteDetailActivity"
     tools:ignore="MergeRootFrame">
 
     <android.support.design.widget.AppBarLayout

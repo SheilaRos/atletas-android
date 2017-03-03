@@ -58,47 +58,6 @@ public class AthleteListActivity extends AppCompatActivity implements AthleteCal
             }
         });
 
-        /*FloatingActionButton searchName = (FloatingActionButton) findViewById(R.id.topName);
-        searchName.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(),PlayerTopActivity.class);
-                intent.putExtra("id", "name");
-                startActivityForResult(intent, 0);
-            }
-        });
-        FloatingActionButton topBaskets = (FloatingActionButton) findViewById(R.id.topBaskets);
-        topBaskets.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(),PlayerTopActivity.class);
-                intent.putExtra("id", "baskets");
-                startActivityForResult(intent, 0);
-            }
-        });
-        FloatingActionButton topBirthDate = (FloatingActionButton) findViewById(R.id.topFechaNacimiento);
-        topBirthDate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(),PlayerTopActivity.class);
-                intent.putExtra("id", "birthdate");
-                startActivityForResult(intent, 0);
-            }
-        });
-
-        topBirthDate.setOnLongClickListener(new View.OnLongClickListener() {
-                                                @Override
-                                                public boolean onLongClick(View view) {
-                                                    Intent intent = new Intent(view.getContext(),PlayerTopBetweenActivity.class);
-                                                    intent.putExtra("id", "birthdate2");
-                                                    startActivityForResult(intent, 0);
-                                                    return false;
-                                                }
-                                            }
-
-        );*/
-
-
         recyclerView = (RecyclerView) findViewById(R.id.athlete_list);
         assert recyclerView != null;
 
